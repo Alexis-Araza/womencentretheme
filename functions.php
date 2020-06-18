@@ -136,8 +136,8 @@ register_default_headers( array(
 
 //Header Image
 $customHeaderDefaults = array(
-    'width' => 400,
-    'height' => 533,
+    'width' => 1920,
+    'height' => 1080,
     'default-image' => get_template_directory_uri() . '/images/background-image.jpeg'
 );
 add_theme_support('custom-header', $customHeaderDefaults);

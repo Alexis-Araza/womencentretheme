@@ -1,8 +1,8 @@
 // Override default variables before the import
 // $body-bg: #000;
-$primary : #024873; // primary
-$secondary : #0396A6; //secondary
-$info: #F25E5E; //info
+$primary : #372F3D; // primary
+$secondary : #3B3647; //secondary
+$info: #272730; //info
 // $white : #04926D; // body background
 // $green: #C1C44D;
 
@@ -14,9 +14,9 @@ $info: #F25E5E; //info
 // Option B: Include parts of Bootstrap
 
 // Required
-// @import "../node_modules/bootstrap/scss/functions";
-// @import "../node_modules/bootstrap/scss/variables";
-// @import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
 //optional
 // @import "../node_modules/bootstrap/scss/utilities";

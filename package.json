@@ -1,5 +1,5 @@
 {
-  "name": "Sum4 Women's Centre",
+  "name": "Garden Sum4",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,7 +18,9 @@
   "homepage": "https:/https://github.com/Alexis-Araza/womencentretheme#readme",
   "dependencies": {
     "bootstrap": "^4.5.0",
-    "grunt": "^1.1.0"
+    "grunt": "^1.1.0",
+    "ruby": "^0.6.1",
+    "sass": "^1.26.8"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "^2.1.0",
