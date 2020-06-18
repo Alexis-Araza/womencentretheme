@@ -41,7 +41,7 @@ function mytheme_customize_register( $wp_customize ) {
    ));
 
    $wp_customize->add_setting( 'garden_footerMessage' , array(
-       'default'   => 'copyright@2020',
+       'default'   => 'Copyright © 2020 Alexis Araza',
        'transport' => 'refresh',
    ) );
 
@@ -58,7 +58,7 @@ function mytheme_customize_register( $wp_customize ) {
    ));
 
    $wp_customize->add_setting( 'garden_siteTitleText' , array(
-       'default'   => 'Plant Wellington',
+       'default'   => 'Christchurch Womens Centre',
        'transport' => 'refresh',
    ) );
 
@@ -76,7 +76,7 @@ function mytheme_customize_register( $wp_customize ) {
   ) );
 
   $wp_customize->add_setting( 'garden_footerIcon' , array(
-      'default'   => get_template_directory_uri() . 'images/facebook.png',
+      'default'   => get_template_directory_uri() . 'images/facebooklogo.png',
       'transport' => 'refresh',
   ) );
 

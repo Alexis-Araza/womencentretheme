@@ -1,5 +1,5 @@
 {
-  "name": "19wdwu07-garden-theme",
+  "name": "Sum4 Women's Centre",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/19wdwu07/Wordpress-Garden-Theme2.git"
+    "url": "git+https://github.com/Alexis-Araza/womencentretheme"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/19wdwu07/Wordpress-Garden-Theme2/issues"
+    "url": "https://github.com/Alexis-Araza/womencentretheme/issues"
   },
-  "homepage": "https://github.com/19wdwu07/Wordpress-Garden-Theme2#readme",
+  "homepage": "https:/https://github.com/Alexis-Araza/womencentretheme#readme",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "grunt": "^1.1.0"

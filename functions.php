@@ -86,8 +86,8 @@ add_action('widgets_init', 'my_sidebars');
 function my_first_post_type(){
   $args = array(
     'labels' => array(
-        'name' => 'Plants',
-        'singular_name' => 'Plant',
+        'name' => 'Resources',
+        'singular_name' => 'Resource',
     ),
 
   'hierarchical' => true, //boolean value toggles between pages & posts without labels
@@ -98,7 +98,7 @@ function my_first_post_type(){
   //if makes difference in features
 
 );
-  register_post_type('plants',$args);
+  register_post_type('Resources',$args);
 }
 
 add_action('init','my_first_post_type');
@@ -118,7 +118,7 @@ function my_first_taxonomy(){
 
 
   );
-  register_taxonomy('types', array('plants'),$args);
+  register_taxonomy('types', array('Resources'),$args);
 
 }
 

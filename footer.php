@@ -1,22 +1,30 @@
-<footer class="text-info myTheme jumbotron ">
+<footer class="text-info myTheme ">
   <div class="container">
   <?php
   // wp_nav_menu(
-  //   array(
-  //   'theme_location' => 'footer-menu',
-  //  //  'menu' => 'Top Bar',
-  //   'menu_class' => 'top-bar'
-  //   )
+  // array(
+  // 'theme_location' => 'footer-menu',
+  // //  'menu' => 'Top Bar',
+  // 'menu_class' => 'btm-bar'
+  // )
   // );
   ?>
-</div>
- <p class="footerText"><?php echo get_theme_mod('garden_footerMessage'); ?></p>
 
-
-  <div class="py-3 row">
-    <img class="col footerText facebook" src="<?php echo get_theme_mod('garden_footerIcon'); ?>" alt="facebook" />
-    <p class="col">twitter </p>
-    <a href="https://skillcrush.com/blog/free-portfolio-templates/" > Developer </a>
+  <p class="footerText"><?php echo get_theme_mod('garden_footerMessage'); ?>
+    <div class="row">
+        <div class="col-lg-9">
+          <p>Christchurch Women's Centre</p>
+          <br>
+          <a href="https://www.facebook.com/Womens-Centre-Christchurch-288086097879452/">
+            <img src="images/facebooklogo.png" class="col facebook" alt="facebook"/></a>
+          <a href="https://www.instagram.com/wgtnhelp/" class="fab socialMediaLinks fa-instagram"></a>
+          <br>
+          <br>
+          <p>Copyright 2020</p>
+          
+        </div>
+      </div>
+    </p>
   </div>
 </footer>
 

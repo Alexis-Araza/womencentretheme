@@ -57,8 +57,9 @@ header{
 .siteTitle{
   margin-left: 100px;
 }
-.searchDiv{
-  margin-left: 85px;
+.searchDiv {
+  margin-right: -700px;
+  float: right;
 }
 .top-bar {
   /* list-style: none; */
@@ -79,9 +80,24 @@ header{
   margin-top: -200px;
 } */
 
-.jumbotron{
-  height: 150px;
-}
+// .btm-bar {
+//   /* list-style: none; */
+//   padding:10px;
+//   /* border:2px solid red; */
+// }
+
+// .btm-bar li{
+//   display:inline;
+// }
+
+// .btm-bar a{
+//   padding: 0.25rem 1rem;
+//   color:black;
+// }
+
+// .jumbotron{
+//   height: 150px;
+// }
 .myPara{
   font-size:22px;
   color: blue;
@@ -115,6 +131,7 @@ header{
     font-weight: 400 !important;
     line-height: 1.5 !important;
 }
+
 
 .footerText{
   margin-left:100px;

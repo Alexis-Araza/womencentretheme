@@ -8,9 +8,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="author" content="Beula">
-    <meta name="description" content="Plant Wellington is a community garden blog website. It offers varieties of plants such herbs, shrubs and medicinal plants.">
-    <meta name="keywords" content="mint, roses, shrubs, plants, herbs, cactus">
+    <meta name="author" content="Alexis Araza">
+    <meta name="description" content="Christchurch Women's Centre is available to provide resources, courses and counselling for women's wellbeing and peace of mind.">
+    <meta name="keywords" content="resources, courses, counselling">
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"> -->
     <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css"> -->
     <script type="text/javascript">
@@ -32,10 +32,6 @@
       <div class="bg-info">
         <h1 class="display-4 text-light siteTitle"> <?php echo get_theme_mod('garden_siteTitleText'); ?></h1>
       </div>
-    <!-- search form -->
-    <div class="container text-info my-5 searchDiv">
-      <?php get_search_form(); ?>
-    </div>
 
     <!-- bootstrap nav-walker -->
 
@@ -45,11 +41,13 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand text-info" href="#">Logo</a>
+    <a class="navbar-brand text-info" href="#">
+      <!-- logo -->
+    <img src="images/womenscntrch.jpeg" alt="Christchurch Women's Centre logo"></a>
         <?php
         wp_nav_menu( array(
             'theme_location'    => 'top-menu',
-            'depth'             => 2,
+            'depth'             => 3,
             'container'         => 'div',
             'container_class'   => 'collapse navbar-collapse',
             'container_id'      => 'bs-example-navbar-collapse-1',
@@ -61,22 +59,9 @@
     </div>
     </nav>
 
-  <header class="myTheme container-fluid">
+    <!-- search form -->
+    <div class="text-info my-4 searchDiv">
+      <?php get_search_form(); ?>
+    </div>
 
-    <!-- logo -->
-
-    <div class="container-fluid">
-    <?php
-    // wp_nav_menu(
-    //   array(
-    //   'theme_location' => 'top-menu',
-    //  //  'menu' => 'Top Bar',
-    //   'menu_class' => 'top-bar'
-    //   )
-    // );
-
-
-    ?>
-  </div>
-  </header>
   </div>
