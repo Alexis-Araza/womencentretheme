@@ -1,10 +1,7 @@
 // Override default variables before the import
-// $body-bg: #000;
 $primary : #372F3D; // primary
 $secondary : #3B3647; //secondary
 $info: #272730; //info
-// $white : #04926D; // body background
-// $green: #C1C44D;
 
 // Option A
 
@@ -41,7 +38,7 @@ $info: #272730; //info
 
 header{
   width:80%;
-  height: 100px;
+  height: 50px;
   background: #111;
 
 }
@@ -98,6 +95,7 @@ header{
 // .jumbotron{
 //   height: 150px;
 // }
+
 .myPara{
   font-size:22px;
   color: blue;

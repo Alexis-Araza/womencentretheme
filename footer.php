@@ -1,4 +1,4 @@
-<footer class="text-info myTheme ">
+<footer class="page-footer font-small blue pt-4 myTheme ">
   <div class="container">
   <?php
   // wp_nav_menu(
@@ -10,23 +10,50 @@
   // );
   ?>
 
-  <p class="footerText"><?php echo get_theme_mod('garden_footerMessage'); ?>
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
     <div class="row">
-        <div class="col-lg-9">
-          <p>Christchurch Women's Centre</p>
-          <br>
-          <a href="https://www.facebook.com/Womens-Centre-Christchurch-288086097879452/">
-            <img src="images/facebooklogo.png" class="col facebook" alt="facebook"/></a>
-          <a href="https://www.instagram.com/wgtnhelp/" class="fab socialMediaLinks fa-instagram"></a>
-          <br>
-          <br>
-          <p>Copyright 2020</p>
-          
-        </div>
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Christchurch Women's Centre</h5>
+
       </div>
-    </p>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <a href="https://www.facebook.com/Womens-Centre-Christchurch-288086097879452/">
+            <img src="images/facebooklogo.png" class="col facebook" alt="facebook"/></a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
   </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <p>Copyright © 2020 Alexis Araza</p>
+  </div>
+  <!-- Copyright -->
+
 </footer>
+<!-- Footer -->
 
 <?php wp_footer(); ?>
 </body>

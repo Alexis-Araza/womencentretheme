@@ -12,7 +12,7 @@
 
         <div class="col-lg-9 ">
           <h1 class="mx-auto"> <?php the_title(); ?>   </h1>
-          <div class="text-secondary">
+          <div class="text">
           <?php get_template_part('includes/section','content'); ?>
         </div>
         </div>
