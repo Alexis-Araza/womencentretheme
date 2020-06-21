@@ -7814,6 +7814,10 @@ header {
   height: 50px;
   background: #111; }
 
+.frontTitle {
+  text-align: center;
+  margin-bottom: 25px; }
+
 .widget {
   list-style-type: none;
   margin: 0;
@@ -7831,8 +7835,7 @@ header {
 
 .top-bar {
   /* list-style: none; */
-  padding: 50px;
-  /* border:2px solid red; */ }
+  padding: 50px; }
 
 .top-bar li {
   display: inline; }
@@ -7841,9 +7844,6 @@ header {
   padding: 0.25rem 1rem;
   color: white; }
 
-/* .myMargin{
-  margin-top: -200px;
-} */
 .myPara {
   font-size: 22px;
   color: blue; }

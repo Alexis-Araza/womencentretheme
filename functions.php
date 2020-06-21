@@ -15,6 +15,13 @@ function load_css(){
 }
 add_action('wp_enqueue_scripts','load_css');
 
+  //Google Fonts
+  function add_google_fonts() {
+
+  wp_enqueue_style( ' add_google_fonts ', ' https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Volkhov:wght@700&display=swap', false );}
+
+  add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
+
 
 //load javascript
 function load_js()
@@ -37,6 +44,7 @@ add_action('wp_enqueue_scripts', 'load_js');
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
 add_theme_support('widgets');
+add_theme_support('custom-logo');
 
 // Menus
 register_nav_menus(
@@ -45,9 +53,9 @@ register_nav_menus(
     'mobile-menu' => 'Mobile Menu Location',
     'footer-menu' => 'Footer Menu Location',
   )
-
-
 );
+
+
 //Bootstrap nav walker
 function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
@@ -105,7 +113,6 @@ add_action('init','my_first_post_type');
 
 
 // Taxanomy
-
 function my_first_taxonomy(){
   $args = array(
     'labels' => array(
@@ -130,7 +137,25 @@ register_default_headers( array(
     'defaultImage' => array(
         'url'           => get_template_directory_uri() . '/images/background-image.jpeg',
         'thumbnail_url' => get_template_directory_uri() . '/images/background-image.jpeg',
-        'description'   => __( 'The default image for the custom header.', 'gardenTheme' )
+        'description'   => __( 'The default image for the custom header.' )
+    )
+) );
+
+//Header Image
+$customHeaderDefaults = array(
+    'width' => 1920,
+    'height' => 1080,
+    'default-image' => get_template_directory_uri() . '/images/background-image.jpeg'
+);
+add_theme_support('custom-header', $customHeaderDefaults);
+
+//header image
+
+register_default_headers( array(
+    'defaultImage' => array(
+        'url'           => get_template_directory_uri() . '/images/background-image.jpeg',
+        'thumbnail_url' => get_template_directory_uri() . '/images/background-image.jpeg',
+        'description'   => __( 'The default image for the custom header.' )
     )
 ) );
 

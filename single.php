@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="page-wrap  container m-auto mt-5">
-    <h1 class="ml-3 my-5"> <?php the_title(); ?>   </h1>
+    <h1 class="text-center"> <?php the_title(); ?>   </h1>
 <div class="container row">
 
   <?php if(has_post_thumbnail()): ?>

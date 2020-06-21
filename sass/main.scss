@@ -1,7 +1,8 @@
 // Override default variables before the import
-$primary : #372F3D; // primary
-$secondary : #3B3647; //secondary
+$primary: #372F3D; // primary
+$secondary: #3B3647; //secondary
 $info: #272730; //info
+
 
 // Option A
 
@@ -43,6 +44,11 @@ header{
 
 }
 
+.frontTitle {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
 .widget{
   list-style-type: none;
   margin:0;
@@ -61,7 +67,6 @@ header{
 .top-bar {
   /* list-style: none; */
   padding:50px;
-  /* border:2px solid red; */
 }
 
 .top-bar li{
@@ -72,29 +77,6 @@ header{
   padding: 0.25rem 1rem;
   color:white;
 }
-
-/* .myMargin{
-  margin-top: -200px;
-} */
-
-// .btm-bar {
-//   /* list-style: none; */
-//   padding:10px;
-//   /* border:2px solid red; */
-// }
-
-// .btm-bar li{
-//   display:inline;
-// }
-
-// .btm-bar a{
-//   padding: 0.25rem 1rem;
-//   color:black;
-// }
-
-// .jumbotron{
-//   height: 150px;
-// }
 
 .myPara{
   font-size:22px;
@@ -138,3 +120,5 @@ header{
   width:80px;
   height:auto;
 }
+
+

@@ -4,7 +4,6 @@
 function mytheme_customize_register( $wp_customize ) {
    //All our sections, settings, and controls will be added here
 
-
    // Background Colour
    $wp_customize->add_setting( 'garden_backgroundColour' , array(
        'default'   => '#ffffff',
@@ -49,23 +48,6 @@ function mytheme_customize_register( $wp_customize ) {
      'label'      => __( 'Footer Text', 'gardenTheme' ),
      'section'    => 'garden_footerSection',
      'settings'   => 'garden_footerMessage',
-   ) ) );
-
-   // Site Title Text
-   $wp_customize->add_section( 'garden_siteTitleTextSection' , array(
-       'title'      => __( 'Site Title Text', 'gardenTheme' ),
-       'priority'   => 30,
-   ));
-
-   $wp_customize->add_setting( 'garden_siteTitleText' , array(
-       'default'   => 'Christchurch Womens Centre',
-       'transport' => 'refresh',
-   ) );
-
-   $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'garden_siteTitleTextControl', array(
-     'label'      => __( 'Site Title Text', 'gardenTheme' ),
-     'section'    => 'garden_siteTitleTextSection',
-     'settings'   => 'garden_siteTitleText',
    ) ) );
 
    // footer icon image
