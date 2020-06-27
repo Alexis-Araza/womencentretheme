@@ -31,12 +31,11 @@
       <hr class="clearfix w-100 d-md-none pb-3">
 
       <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
+      <div class="mx-auto" style="width: 200px;">
 
         <!-- Links -->
-        <a href="https://www.facebook.com/Womens-Centre-Christchurch-288086097879452/">
-            <img src="images/facebooklogo.png" class="col facebook" alt="facebook"/></a>
-
+        <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]');
+         ?>
       </div>
       <!-- Grid column -->
 

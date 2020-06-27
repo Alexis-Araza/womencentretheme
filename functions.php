@@ -131,26 +131,8 @@ function my_first_taxonomy(){
 
 add_action('init', 'my_first_taxonomy');
 
-//header image
-
-register_default_headers( array(
-    'defaultImage' => array(
-        'url'           => get_template_directory_uri() . '/images/background-image.jpeg',
-        'thumbnail_url' => get_template_directory_uri() . '/images/background-image.jpeg',
-        'description'   => __( 'The default image for the custom header.' )
-    )
-) );
-
-//Header Image
-$customHeaderDefaults = array(
-    'width' => 1920,
-    'height' => 1080,
-    'default-image' => get_template_directory_uri() . '/images/background-image.jpeg'
-);
-add_theme_support('custom-header', $customHeaderDefaults);
 
 //header image
-
 register_default_headers( array(
     'defaultImage' => array(
         'url'           => get_template_directory_uri() . '/images/background-image.jpeg',
@@ -168,7 +150,29 @@ $customHeaderDefaults = array(
 add_theme_support('custom-header', $customHeaderDefaults);
 
 
+// Woocommerce Cart
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+function enqueue_load_fa() {
+  wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.13.0/css/all.css' );
+}
 
+function my_header_add_to_cart_fragment( $fragments ) {
+
+  ob_start();
+  $count = WC()->cart->cart_contents_count;
+  ?><a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php
+  if ( $count > 0 ) {
+    ?>
+    <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+    <?php
+  }
+  ?></a><?php
+
+  $fragments['a.cart-contents'] = ob_get_clean();
+
+  return $fragments;
+}
+add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment' );
 
 
 
